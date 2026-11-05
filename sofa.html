@@ -6,9 +6,116 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Modern Sofa | WOODEN HOME</title>
+    <style>
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background: #F7F3EB;
+        color: #4B382A;
+    }
+
+    .sofa-gallery {
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    .sofa-gallery h2 {
+        font-size: 30px;
+        margin-bottom: 35px;
+    }
+
+    .gallery-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    .sofa-card {
+        background: white;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    }
+
+    .sofa-card img {
+        width: 100%;
+        height: 230px;
+        object-fit: cover;
+    }
+
+    .sofa-card h3 {
+        margin: 18px 10px 10px;
+    }
+
+    .sofa-card p {
+        padding: 0 15px 20px;
+        line-height: 1.6;
+        color: #7A6653;
+    }
+
+    </style>
 </head>
 
 <body>
+<header>
+    <h1>WOODEN HOME</h1>
+    <p>Modern Sofa Collection</p>
+</header>
+    <section class="sofa-details">
+
+    <img
+        src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=1000"
+        alt="Modern Sofa"
+    >
+
+    <h2>Modern Sofa</h2>
+
+    <p>
+        Elegant and comfortable sofa for your living room.
+    </p>
+
+    </section>
+    <section class="sofa-gallery" id="collection">
+
+    <h2>Choose Your Sofa Style</h2>
+
+    <div class="gallery-container">
+
+        <div class="sofa-card">
+            <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600" alt="L Shape Sofa">
+            <h3>L Shape Sofa</h3>
+            <p>Modern L-shaped sofa for spacious living rooms.</p>
+        </div>
+
+        <div class="sofa-card">
+            <img src="https://images.unsplash.com/photo-1550254478-ead40cc54513?w=600" alt="Modern Sofa">
+            <h3>Modern Sofa</h3>
+            <p>Simple and elegant design for modern homes.</p>
+        </div>
+
+        <div class="sofa-card">
+            <img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=600" alt="Classic Sofa">
+            <h3>Classic Sofa</h3>
+            <p>Luxury style with timeless details.</p>
+        </div>
+
+        <div class="sofa-card">
+            <img src="https://images.unsplash.com/photo-1550254478-ead40cc54513?w=600" alt="Curved Sofa">
+            <h3>Curved Sofa</h3>
+            <p>Unique curved design with a modern look.</p>
+        </div>
+
+    </div>
+
+    </section>
 
 </body>
 
