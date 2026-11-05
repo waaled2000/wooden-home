@@ -262,6 +262,30 @@
         </div>
 
     </section>
+<script>
 
+let currentLang = "en";
+
+const languageBtn = document.getElementById("languageBtn");
+
+languageBtn.addEventListener("click", function() {
+
+    currentLang = currentLang === "en" ? "ar" : "en";
+
+    document.querySelectorAll("[data-en]").forEach(function(element) {
+
+        element.textContent = element.getAttribute("data-" + currentLang);
+
+    });
+
+    document.documentElement.lang = currentLang;
+
+    document.documentElement.dir = currentLang === "ar" ? "rtl" : "ltr";
+
+    languageBtn.textContent = currentLang === "en" ? "العربية" : "English";
+
+});
+
+</script>
 </body>
 </html>
