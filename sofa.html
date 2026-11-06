@@ -14,21 +14,32 @@
         box-sizing: border-box;
     }
 
-    body {
-        font-family: Arial, sans-serif;
-        background: #F7F3EB;
-        color: #4B382A;
-    }
-
+  body {
+    font-family: Arial, sans-serif;
+    background: #F5F0E8;
+    color: #3E3025;
+    line-height: 1.6;
+}
     .sofa-gallery {
-        padding: 60px 20px;
-        text-align: center;
-    }
+    background: #F5F0E8;
+    padding: 65px 20px;
+    text-align: center;
+}
 
-    .sofa-gallery h2 {
-        font-size: 30px;
-        margin-bottom: 35px;
-    }
+.sofa-gallery h2 {
+    color: #3E3025;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.sofa-gallery h2::after {
+    content: "";
+    display: block;
+    width: 65px;
+    height: 3px;
+    background: #B8955A;
+    margin: 15px auto 0;
+} 
 
     .gallery-container {
         display: grid;
@@ -38,41 +49,59 @@
         margin: auto;
     }
    .sofa-card {
-    background: #F7F3EB;
-    border-radius: 15px;
+    background: #FFFFFF;
+    border-radius: 14px;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    border: 1px solid #E5D8C5;
+    box-shadow: 0 6px 20px rgba(62, 48, 37, 0.08);
     transition: 0.3s ease;
 }
 
 .sofa-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    transform: translateY(-7px);
+    box-shadow: 0 12px 28px rgba(62, 48, 37, 0.16);
 } 
-
-    .sofa-card img {
-        width: 100%;
-        height: 230px;
-        object-fit: cover;
-    }
-
-    .sofa-card h3 {
-    margin: 18px 10px 10px;
-    font-size: 21px;
-    color: #4B382A;
+.sofa-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
 }
 
-    .sofa-card p {
-    padding: 0 15px 20px;
-    line-height: 1.7;
-    color: #7A6653;
+.sofa-card:hover img {
+    transform: scale(1.04);
+} 
+    .sofa-card h3 {
+    margin: 20px 10px 10px;
+    font-size: 22px;
+    color: #3E3025;
+    font-weight: 600;
+} 
+.sofa-card p {
+    padding: 0 18px 22px;
+    line-height: 1.8;
+    color: #8A7661;
     font-size: 15px;
 } 
 header {
-    background: #4B382A;
-    color: white;
+    background: #3E3025;
+    color: #F5F0E8;
     text-align: center;
-    padding: 30px 20px;
+    padding: 40px 20px;
+    border-bottom: 3px solid #B8955A;
+}
+
+header h1 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 16px;
+    color: #D8BD8A;
+    letter-spacing: 1px;
 }
 
 header h1 {
@@ -156,6 +185,17 @@ header p {
     </p>
 
     </section>
+<section class="catalog-intro">
+
+    <h2>Discover Our Sofa Collection</h2>
+
+    <p>
+        Explore our exclusive collection of modern and classic sofas.
+        Discover elegant designs, comfortable seating, and styles
+        made to bring beauty and comfort to your home.
+    </p>
+
+</section>
     <section class="sofa-gallery" id="collection">
 
     <h2>Choose Your Sofa Style</h2>
