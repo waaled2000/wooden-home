@@ -37,13 +37,18 @@
         max-width: 1000px;
         margin: auto;
     }
+   .sofa-card {
+    background: #F7F3EB;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
 
-    .sofa-card {
-        background: white;
-        border-radius: 12px;
-        overflow: hidden;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-    }
+.sofa-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+} 
 
     .sofa-card img {
         width: 100%;
@@ -60,6 +65,56 @@
         line-height: 1.6;
         color: #7A6653;
     }
+header {
+    background: #4B382A;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 16px;
+    color: #D8C3A5;
+}
+.sofa-details {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.sofa-details img {
+    width: 100%;
+    max-width: 600px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+}
+
+.sofa-details h2 {
+    margin: 20px 0 10px;
+    font-size: 28px;
+}
+
+.sofa-details p {
+    color: #7A6653;
+    line-height: 1.7;
+} 
+.sofa-gallery {
+    background: #FFFFFF;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.sofa-gallery h2 {
+    color: #4B382A;
+    font-size: 30px;
+    margin-bottom: 35px;
+} 
         @media (max-width: 600px) {
 
     .gallery-container {
