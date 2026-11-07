@@ -92,11 +92,22 @@ body {
 
 .product-info li {
     margin-bottom: 10px;
-} @media (max-width: 700px) .gallery-images {
-    grid-template-columns: 1fr;
-} .specifications-container {
-    grid-template-columns: repeat(2, 1fr);
-} {
+}
+    @media (max-width: 700px) {
+    .gallery-images {
+        grid-template-columns: 1fr;
+    }
+
+    .specifications-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        width: 100%;
+    }
+
+    .spec-item {
+        min-width: 0;
+        overflow-wrap: anywhere;
+    }
+    }
 
     .product-details {
         grid-template-columns: 1fr;
