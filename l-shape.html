@@ -77,6 +77,104 @@
 
 .product-info li {
     margin-bottom: 10px;
+} .product-gallery {
+    padding: 50px 20px;
+    text-align: center;
+    background: #FFFFFF;
+}
+
+.product-gallery h2 {
+    font-size: 28px;
+    color: #3E3025;
+    margin-bottom: 30px;
+}
+
+.gallery-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.gallery-images img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 1px solid #E5D8C5;
+} .product-specifications {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.product-specifications h2 {
+    font-size: 28px;
+    margin-bottom: 35px;
+    color: #3E3025;
+}
+
+.specifications-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.spec-item {
+    background: #FFFFFF;
+    padding: 25px 15px;
+    border-radius: 12px;
+    border: 1px solid #E5D8C5;
+}
+
+.spec-item h3 {
+    color: #B8955A;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.spec-item p {
+    color: #806C58;
+    font-size: 14px;
+} @media (max-width: 700px) {
+
+    .product-details {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        margin: 25px auto;
+    }
+
+    .product-image img {
+        height: 280px;
+    }
+
+    .gallery-images {
+        grid-template-columns: 1fr;
+    }
+
+    .specifications-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-info h2 {
+        font-size: 26px;
+    }
+
+}
+        .back-link {
+    display: inline-block;
+    margin: 25px;
+    color: #8A6A3F;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.back-link:hover {
+    color: #B8955A;
+    transform: translateX(-5px);
 } 
     </style>
 </head>
@@ -89,6 +187,9 @@
         <p>Luxury Furniture Collection</p>
 
     </header>
+    <a href="sofa.html" class="back-link">
+    ← Back to Sofa Collection
+    </a>
     <main>
 
     <section class="product-details">
